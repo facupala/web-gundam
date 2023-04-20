@@ -215,9 +215,6 @@ p.p-galeria{
   color: white;
   font-size: 1rem;  
 }
-p.p-galeria:hover{
-  color: #DADD46;
-}
 img.img-galeria{
   
   height: 325px;
