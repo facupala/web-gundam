@@ -73,5 +73,18 @@ img.img-galeria {
     padding: 1rem;
     margin: 1rem;
 }
-
+@media screen and (max-width:425px) {
+    main.galeria .tarjetas {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "sazabi sazabi "
+            "rx78 rx78"
+            "bael bael"
+            "gusion  gusion";
+            .caja {
+                width: 85%;
+            }
+    }  
+}  
 
