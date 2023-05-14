@@ -1,0 +1,78 @@
+main.guia {
+    background-image: url(../imagenes/PROYECTOGUN.webp);
+    background-size: cover;
+}
+
+.col-6 {
+    padding: 0;
+}
+
+.col-md-4 {
+    padding: 0;
+}
+
+h2.h2-guia,
+p.p-guia {
+    color: white;
+}
+
+h2.h2-guia {
+    font-size: 1.25rem;
+    margin: 0.60rem;
+    text-align: center;
+}
+
+p.p-guia {
+    font-size: 1rem;
+    margin: 0.70rem;
+    text-align: center;
+
+}
+
+.info {
+    text-align: center;
+    background-color: #000000;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 2.60rem;
+}
+
+section.cuadros-guia {
+    margin: 1rem;
+}
+
+a.like {
+    width: 40%;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    background-color: #DADD46;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: auto;
+}
+
+iframe.i-guia {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:767px) {
+    .info {
+        border-radius: 30px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .h2-guia {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .p-guia {
+        font-size: 0.8rem;
+    }
+}

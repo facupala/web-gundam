@@ -1,0 +1,87 @@
+main.galeria {
+    background-image: url(../imagenes/PROYECTOGUN.webp);
+    background-size: cover;
+    .tarjetas {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "sazabi sazabi bael bael"
+            "gusion  gusion rx78 rx78";
+            .caja {
+                width: 75%;
+            }            
+    }
+}
+
+h2.tit-galeria {
+    color: white;
+    margin: 1rem;
+    font-size: 1.40rem;
+}
+
+p.p-galeria {
+    color: white;
+    font-size: 1rem;
+}
+
+img.img-galeria {
+
+    height: 325px;
+}
+
+.sazabi {
+    grid-area: sazabi;
+    border-radius: 30px;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: black;
+}
+
+.bael {
+    grid-area: bael;
+    border-radius: 30px;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: black;
+}
+
+.gusion {
+    grid-area: gusion;
+    background-color: black;
+    border-radius: 30px;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.rx78 {
+    grid-area: rx78;
+    background-color: black;
+    border-radius: 30px;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+@media screen and (max-width:425px) {
+    .tarjetas {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "sazabi sazabi "
+            "rx78 rx78"
+            "bael bael"
+            "gusion  gusion";
+    }
+
+    .caja {
+        width: 85%;
+    }
+}

@@ -1,0 +1,144 @@
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .universo {
+        display: flex;
+        color: white;
+        background-image: url(../imagenes/rx78\ fondo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-items: center;
+        justify-content: space-around;
+        height: 55rem;
+
+        .caja-universo {
+            display: flex;
+            flex-direction: column;
+            width: 24rem;
+            height: 30rem;
+            text-align: center;
+            background-color: black;
+            border-radius: 30px;
+            position: relative;
+
+            .titulo-universo {
+                padding: 20px;
+                font-size: 2rem;
+            }
+
+            .p-universo {
+                font-size: 1.25rem;
+                margin-bottom: 40px;
+                width: 98%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+div a.boton-galeria {
+    background-color: #DADD46;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+
+   &:hover{
+    background-color: crimson;
+    color: white;
+    }
+    
+}
+
+section.juego {
+    background-image: url(../imagenes/fondojuego.jpg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .titulo-juego {
+        color: #DADD46;
+        padding: 2rem;
+        font-size: 1.50rem;
+    }
+
+    .fleximg {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+
+    }
+}
+
+div.boton-juego a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #DADD46;
+    padding: 10px;
+    border-radius: 15px;
+    &:hover {
+        background-color: crimson;
+        color: white;
+    }
+
+}
+.boton-juego {
+    padding: 45px;
+}
+img.imgjuego {
+    width: 28rem;
+    padding: 1rem;
+}
+
+@media screen and (max-width:480px) {
+    section.universo {
+        display: flex;
+        justify-content: center;
+    }
+
+    div.contac {
+        text-align: center;
+    }
+
+    h1.titulo {
+        font-size: 1.50rem;
+    }
+
+    li.item a {
+        font-size: 1rem;
+    }
+
+    img.imgjuego {
+        width: 24.50rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    img.imgjuego {
+        width: 23.5rem;
+    }
+
+    h1.titulo-juego {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    p.p-universo {
+        font-size: 1rem;
+    }
+
+    img.imgjuego {
+        width: 20rem;
+    }
+
+    h1.titulo-juego {
+        font-size: 1rem;
+    }
+}

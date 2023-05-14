@@ -1,0 +1,75 @@
+.contenido-contacto{
+    background-image: url(../imagenes/40th.jpg);
+    background-size: cover;
+    .formulario{
+        background-color: black;
+        color: #DADD46;
+        margin: 0;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 15px;
+        margin: 3rem 0 1rem 0;
+        .inp-for{
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+        }
+    }
+    .armado{
+        margin: 3rem 0 1rem 0;
+        text-align: center;
+        color: #DADD46;
+        .img-armado{
+            margin: 1rem 0 0.5rem 0;
+        }
+        h2{
+            font-weight: bold;
+        }
+    }
+    .contenido-arriba{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .contenido-abajo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .red-soc{
+            text-align: center;
+            color: #DADD46;
+            background-color: black;
+            margin: 1rem 0 2rem 0;
+            border-radius: 15px;
+            padding: 1rem;
+            h2{
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+                margin-top: 1rem;
+            }
+            a{  
+                margin: 2rem 2rem 2rem 2rem;
+                padding: 1rem;
+                img{
+                    width: 3.2rem;
+                }
+            }
+        }
+        .ubicacion{
+            color: #DADD46;
+            text-align: center;
+            background-color: black;
+            margin: 1rem 0 2rem 0;
+            border-radius: 15px;
+            padding: 1.7rem;
+            iframe{
+                width: 95%;
+                height: 90%;
+            }
+            h2{
+                font-size: 1.5rem;
+                margin-bottom: 0.2rem;
+            }
+        }
+    }
+}
+

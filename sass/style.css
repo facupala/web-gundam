@@ -1,0 +1,516 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Orbitron:wght@400;500;800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+}
+
+img.logo {
+  width: 4.5rem;
+}
+
+.titulo-logo {
+  font-weight: bold;
+  color: #DADD46;
+}
+
+.texto-menu {
+  color: white;
+  font-weight: bold;
+}
+
+.texto-menu:hover {
+  color: #DADD46;
+}
+
+.navbar-nav .nav-link.active {
+  color: #DADD46;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 360px) {
+  .titulo-logo {
+    font-size: 1.1rem;
+  }
+}
+footer {
+  background-color: #5A5B6D;
+  color: white;
+}
+footer .social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+footer .social .contac p {
+  color: white;
+  font-size: 0.8rem;
+  margin: 5px auto;
+}
+footer .social .foot {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+div.redes a img {
+  width: 50px;
+}
+
+.h2-fot {
+  font-size: 1rem;
+}
+
+div.img-sociales {
+  display: flex;
+  justify-content: space-around;
+}
+
+img.logo-foot {
+  height: 25px;
+}
+
+div.derechos {
+  background-color: black;
+  color: #DADD46;
+  font-size: 0.5rem;
+  text-align: center;
+  padding: 0.1rem;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .universo {
+  display: flex;
+  color: white;
+  background-image: url(../imagenes/rx78\ fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: space-around;
+  height: 55rem;
+}
+main .universo .caja-universo {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  height: 30rem;
+  text-align: center;
+  background-color: black;
+  border-radius: 30px;
+  position: relative;
+}
+main .universo .caja-universo .titulo-universo {
+  padding: 20px;
+  font-size: 2rem;
+}
+main .universo .caja-universo .p-universo {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  width: 98%;
+  text-align: center;
+}
+
+div a.boton-galeria {
+  background-color: #DADD46;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+div a.boton-galeria:hover {
+  background-color: crimson;
+  color: white;
+}
+
+section.juego {
+  background-image: url(../imagenes/fondojuego.jpg);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section.juego .titulo-juego {
+  color: #DADD46;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+section.juego .fleximg {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+div.boton-juego a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #DADD46;
+  padding: 10px;
+  border-radius: 15px;
+}
+div.boton-juego a:hover {
+  background-color: crimson;
+  color: white;
+}
+
+.boton-juego {
+  padding: 45px;
+}
+
+img.imgjuego {
+  width: 28rem;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  section.universo {
+    display: flex;
+    justify-content: center;
+  }
+  div.contac {
+    text-align: center;
+  }
+  h1.titulo {
+    font-size: 1.5rem;
+  }
+  li.item a {
+    font-size: 1rem;
+  }
+  img.imgjuego {
+    width: 24.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  img.imgjuego {
+    width: 23.5rem;
+  }
+  h1.titulo-juego {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  p.p-universo {
+    font-size: 1rem;
+  }
+  img.imgjuego {
+    width: 20rem;
+  }
+  h1.titulo-juego {
+    font-size: 1rem;
+  }
+}
+main.galeria {
+  background-image: url(../imagenes/PROYECTOGUN.webp);
+  background-size: cover;
+}
+main.galeria .tarjetas {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "sazabi sazabi bael bael" "gusion  gusion rx78 rx78";
+}
+main.galeria .tarjetas .caja {
+  width: 75%;
+}
+
+h2.tit-galeria {
+  color: white;
+  margin: 1rem;
+  font-size: 1.4rem;
+}
+
+p.p-galeria {
+  color: white;
+  font-size: 1rem;
+}
+
+img.img-galeria {
+  height: 325px;
+}
+
+.sazabi {
+  grid-area: sazabi;
+  border-radius: 30px;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: black;
+}
+
+.bael {
+  grid-area: bael;
+  border-radius: 30px;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: black;
+}
+
+.gusion {
+  grid-area: gusion;
+  background-color: black;
+  border-radius: 30px;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.rx78 {
+  grid-area: rx78;
+  background-color: black;
+  border-radius: 30px;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 425px) {
+  .tarjetas {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "sazabi sazabi " "rx78 rx78" "bael bael" "gusion  gusion";
+  }
+  .caja {
+    width: 85%;
+  }
+}
+main.guia {
+  background-image: url(../imagenes/PROYECTOGUN.webp);
+  background-size: cover;
+}
+
+.col-6 {
+  padding: 0;
+}
+
+.col-md-4 {
+  padding: 0;
+}
+
+h2.h2-guia,
+p.p-guia {
+  color: white;
+}
+
+h2.h2-guia {
+  font-size: 1.25rem;
+  margin: 0.6rem;
+  text-align: center;
+}
+
+p.p-guia {
+  font-size: 1rem;
+  margin: 0.7rem;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+  background-color: #000000;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 2.6rem;
+}
+
+section.cuadros-guia {
+  margin: 1rem;
+}
+
+a.like {
+  width: 40%;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  background-color: #DADD46;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: auto;
+}
+
+iframe.i-guia {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .info {
+    border-radius: 30px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .h2-guia {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .p-guia {
+    font-size: 0.8rem;
+  }
+}
+.contenido-tienda {
+  background-image: url(../imagenes/PROYECTOGUN.webp);
+  background-size: cover;
+}
+.contenido-tienda .ti-tienda {
+  color: #DADD46;
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem;
+}
+.contenido-tienda .sub-tienda {
+  color: #DADD46;
+  text-align: center;
+  background-color: black;
+  border-color: #DADD46;
+  border-bottom-width: 0.5rem;
+  border-style: solid;
+  margin: 0;
+}
+.contenido-tienda .herramientas {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.contenido-tienda .caja-tienda {
+  background-color: white;
+  border-radius: 15px;
+}
+.contenido-tienda .caja-tienda .h3-herramientas {
+  margin: 1rem;
+  font-size: 1.25rem;
+}
+.contenido-tienda .caja-tienda img {
+  height: 300px;
+  width: 300px;
+  padding: 1rem;
+}
+.contenido-tienda .sub-kits {
+  color: #DADD46;
+  text-align: center;
+  background-color: black;
+  margin: 0;
+  border-color: #DADD46;
+  border-bottom-width: 0.5rem;
+  border-style: solid;
+}
+.contenido-tienda .kits {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+.contenido-tienda .caja-kits {
+  background-color: white;
+  border-radius: 15px;
+}
+.contenido-tienda .caja-kits .h3-kits {
+  margin: 1rem;
+  font-size: 1rem;
+}
+.contenido-tienda .caja-kits img {
+  height: 300px;
+  width: 300px;
+  padding: 1rem;
+}
+
+.contenido-contacto {
+  background-image: url(../imagenes/40th.jpg);
+  background-size: cover;
+}
+.contenido-contacto .formulario {
+  background-color: black;
+  color: #DADD46;
+  margin: 0;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 15px;
+  margin: 3rem 0 1rem 0;
+}
+.contenido-contacto .formulario .inp-for {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+.contenido-contacto .armado {
+  margin: 3rem 0 1rem 0;
+  text-align: center;
+  color: #DADD46;
+}
+.contenido-contacto .armado .img-armado {
+  margin: 1rem 0 0.5rem 0;
+}
+.contenido-contacto .armado h2 {
+  font-weight: bold;
+}
+.contenido-contacto .contenido-arriba {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contenido-contacto .contenido-abajo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contenido-contacto .contenido-abajo .red-soc {
+  text-align: center;
+  color: #DADD46;
+  background-color: black;
+  margin: 1rem 0 2rem 0;
+  border-radius: 15px;
+  padding: 1rem;
+}
+.contenido-contacto .contenido-abajo .red-soc h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.contenido-contacto .contenido-abajo .red-soc a {
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 1rem;
+}
+.contenido-contacto .contenido-abajo .red-soc a img {
+  width: 3.2rem;
+}
+.contenido-contacto .contenido-abajo .ubicacion {
+  color: #DADD46;
+  text-align: center;
+  background-color: black;
+  margin: 1rem 0 2rem 0;
+  border-radius: 15px;
+  padding: 1.7rem;
+}
+.contenido-contacto .contenido-abajo .ubicacion iframe {
+  width: 95%;
+  height: 90%;
+}
+.contenido-contacto .contenido-abajo .ubicacion h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}/*# sourceMappingURL=style.css.map */

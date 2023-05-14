@@ -1,0 +1,27 @@
+img.logo {
+    width: 4.50rem;
+}
+
+.titulo-logo {
+    font-weight: bold;
+    color: #DADD46;
+}
+
+.texto-menu {
+    color: white;
+    font-weight: bold;
+
+}
+.texto-menu:hover {
+    color: #DADD46;
+}
+.navbar-nav .nav-link.active {
+    color: #DADD46;
+    font-weight: bold;
+}
+
+@media screen and (max-width:360px) {
+    .titulo-logo {
+        font-size: 1.10rem;
+    }
+}

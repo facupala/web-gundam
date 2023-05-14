@@ -1,0 +1,74 @@
+.contenido-tienda{
+    background-image: url(../imagenes/PROYECTOGUN.webp);
+    background-size: cover;
+    .ti-tienda{
+        color:#DADD46;
+        text-align: center;
+        font-size: 2rem;
+        margin: 2rem;
+    }
+    .sub-tienda{
+        color: #DADD46;
+        text-align: center;
+        background-color: black;
+        border-color: #DADD46;
+        border-bottom-width: 0.5rem;
+        border-style: solid;
+        margin: 0;
+    }
+    .herramientas{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+    .caja-tienda{
+        background-color: white;
+        border-radius: 15px;
+        .h3-herramientas{
+            margin: 1rem;
+            font-size: 1.25rem;
+        }
+        img{
+            height: 300px;
+            width: 300px;
+            padding: 1rem;
+        }
+    }
+    .sub-kits{
+        color: #DADD46;
+        text-align: center;
+        background-color: black;
+        margin: 0;
+        border-color: #DADD46;
+        border-bottom-width: 0.5rem;
+        border-style: solid;
+    }
+    .kits{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
+    .caja-kits{
+        background-color: white;
+        border-radius: 15px;
+        .h3-kits{
+            margin: 1rem;
+            font-size: 1rem;
+        }
+        img{
+            height: 300px;
+            width: 300px;
+            padding: 1rem;
+        }
+    }
+    
+}

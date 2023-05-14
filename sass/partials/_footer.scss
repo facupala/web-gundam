@@ -1,0 +1,41 @@
+footer{
+    background-color:#5A5B6D;
+    color: white;  
+    .social{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+        flex-wrap: wrap;
+        .contac p{
+            color: white;
+            font-size: 0.8rem;
+            margin: 5px auto;
+        }
+        .foot{
+            color: white;
+            font-size: 1.10rem;
+            margin-bottom: 5px;
+          }
+    }  
+}
+div.redes a img{
+      width: 50px;
+}
+.h2-fot{
+    font-size: 1rem;
+}
+div.img-sociales{
+  display: flex;
+  justify-content: space-around;
+}
+img.logo-foot{
+  height: 25px;
+}
+div.derechos{
+  background-color: black;
+  color: #DADD46;
+  font-size: 0.5rem;
+  text-align: center;
+  padding: 0.10rem;
+  }
