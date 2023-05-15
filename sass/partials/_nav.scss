@@ -4,7 +4,7 @@ img.logo {
 
 .titulo-logo {
     font-weight: bold;
-    color: #DADD46;
+    color: $maincolortext;
 }
 
 .texto-menu {
@@ -13,10 +13,10 @@ img.logo {
 
 }
 .texto-menu:hover {
-    color: #DADD46;
+    color: $maincolortext;
 }
 .navbar-nav .nav-link.active {
-    color: #DADD46;
+    color: $maincolortext;
     font-weight: bold;
 }
 

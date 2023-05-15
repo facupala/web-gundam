@@ -3,7 +3,7 @@
     background-size: cover;
     .formulario{
         background-color: black;
-        color: #DADD46;
+        color: $maincolortext;
         margin: 0;
         text-align: center;
         padding: 1rem;
@@ -17,7 +17,7 @@
     .armado{
         margin: 3rem 0 1rem 0;
         text-align: center;
-        color: #DADD46;
+        color: $maincolortext;
         .img-armado{
             margin: 1rem 0 0.5rem 0;
         }
@@ -36,7 +36,7 @@
         justify-content: space-around;
         .red-soc{
             text-align: center;
-            color: #DADD46;
+            color: $maincolortext;
             background-color: black;
             margin: 1rem 0 2rem 0;
             border-radius: 15px;
@@ -55,7 +55,7 @@
             }
         }
         .ubicacion{
-            color: #DADD46;
+            color: $maincolortext;
             text-align: center;
             background-color: black;
             margin: 1rem 0 2rem 0;

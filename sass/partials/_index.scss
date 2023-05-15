@@ -39,7 +39,7 @@ main{
 }
 
 div a.boton-galeria {
-    background-color: #DADD46;
+    background-color: $maincolortext;
     color: black;
     font-size: 1.25rem;
     font-weight: bolder;
@@ -61,7 +61,7 @@ section.juego {
     flex-direction: column;
 
     .titulo-juego {
-        color: #DADD46;
+        color: $maincolortext;
         padding: 2rem;
         font-size: 1.50rem;
     }

@@ -3,14 +3,14 @@
     background-size: cover;
 
     .ti-tienda {
-        color: #DADD46;
+        color: $maincolortext;
         text-align: center;
         font-size: 2rem;
         margin: 2rem;
     }
 
     .sub-tienda {
-        color: #DADD46;
+        color: $maincolortext;
         text-align: center;
         background-color: black;
         border-color: #DADD46;
@@ -47,7 +47,7 @@
     }
 
     .sub-kits {
-        color: #DADD46;
+        color: $maincolortext;
         text-align: center;
         background-color: black;
         margin: 0;
@@ -86,6 +86,8 @@
     .boton-tienda.heartbeat {
         text-align: center;
         margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
         &:hover{
             -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
                     animation: heartbeat 1.5s ease-in-out infinite both;
