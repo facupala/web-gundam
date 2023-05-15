@@ -1,13 +1,15 @@
-.contenido-tienda{
+.contenido-tienda {
     background-image: url(../imagenes/PROYECTOGUN.webp);
     background-size: cover;
-    .ti-tienda{
-        color:#DADD46;
+
+    .ti-tienda {
+        color: #DADD46;
         text-align: center;
         font-size: 2rem;
         margin: 2rem;
     }
-    .sub-tienda{
+
+    .sub-tienda {
         color: #DADD46;
         text-align: center;
         background-color: black;
@@ -16,7 +18,8 @@
         border-style: solid;
         margin: 0;
     }
-    .herramientas{
+
+    .herramientas {
         display: flex;
         flex-wrap: wrap;
         background-color: black;
@@ -25,20 +28,25 @@
         justify-content: space-around;
         padding: 2rem;
     }
-    .caja-tienda{
+
+    .caja-tienda {
         background-color: white;
         border-radius: 15px;
-        .h3-herramientas{
+        margin: 0.5rem;
+
+        .h3-herramientas {
             margin: 1rem;
             font-size: 1.25rem;
         }
-        img{
+
+        img {
             height: 300px;
             width: 300px;
             padding: 1rem;
         }
     }
-    .sub-kits{
+
+    .sub-kits {
         color: #DADD46;
         text-align: center;
         background-color: black;
@@ -47,7 +55,8 @@
         border-bottom-width: 0.5rem;
         border-style: solid;
     }
-    .kits{
+
+    .kits {
         display: flex;
         flex-wrap: wrap;
         background-color: black;
@@ -57,18 +66,150 @@
         padding: 2rem;
         margin-bottom: 3rem;
     }
-    .caja-kits{
+
+    .caja-kits {
         background-color: white;
         border-radius: 15px;
-        .h3-kits{
+        margin: 0.5rem;
+
+        .h3-kits {
             margin: 1rem;
             font-size: 1rem;
         }
-        img{
+
+        img {
             height: 300px;
             width: 300px;
             padding: 1rem;
         }
     }
-    
+    .boton-tienda.heartbeat {
+        text-align: center;
+        margin-bottom: 2rem;
+        &:hover{
+            -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+                    animation: heartbeat 1.5s ease-in-out infinite both;
+        }
+      a{
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        background-color: #DADD46;
+        padding: 10px;
+        border-radius: 15px;
+        font-size: 2rem;
+        &:hover {
+            background-color: crimson;
+            color: white;
+            -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+            animation: heartbeat 1.5s ease-in-out infinite both;
+
+        }
+      }
+    }
+    .slide {
+        -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    @for $slide from 1 through 4 {
+
+        .slide:nth-child(#{$slide}) {
+            animation-delay: $slide*0.35s;
+        }
+
+    }
 }
+ @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+@-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
